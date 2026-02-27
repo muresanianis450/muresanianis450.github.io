@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SD Card Backup"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp" />
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insert SD card and click Scan"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#E0E0E0"
+        android:layout_marginBottom="32dp"
+        android:minHeight="100dp" />
+
+    <Button
+        android:id="@+id/scanButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scan SD Card"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/archiveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Archive"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        android:enabled="false" />
+
+    <Button
+        android:id="@+id/shareButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share Archive"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:enabled="false" />
+
+</LinearLayout>
