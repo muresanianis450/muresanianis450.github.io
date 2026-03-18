@@ -10,7 +10,7 @@
         android:id="@+id/titleText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SD Card Backup"
+        android:text="SD Card Archive Tool"
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_marginTop="32dp"
