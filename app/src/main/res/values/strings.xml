@@ -1,3 +1,64 @@
 <resources>
     <string name="app_name">SD Card Backup</string>
+
+    <!-- Screen -->
+    <string name="title">SD Card Archive Tool</string>
+    <string name="status_initial">Connect your SD card or USB stick, then tap Select below.</string>
+    <string name="status_card_detected">Card detected. Tap Select below and confirm — Android asks for this once, then the app scans automatically from now on.</string>
+    <string name="folder_label">Card: %1$s</string>
+    <string name="folder_label_unnamed">Using the folder you selected</string>
+
+    <!-- Buttons -->
+    <string name="button_select_card">Select SD Card</string>
+    <string name="button_rescan">Scan Again</string>
+    <string name="button_change_folder">Use a different folder</string>
+    <string name="button_archive">Create Archive</string>
+    <string name="button_share">Share Archive</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_close">Close</string>
+    <string name="button_share_anyway">Share anyway</string>
+
+    <!-- Progress -->
+    <string name="progress_scanning">Scanning card…</string>
+    <string name="progress_archiving_start">Creating archive…</string>
+    <string name="progress_archiving">Archiving %1$d of %2$d…</string>
+
+    <!-- Status -->
+    <string name="status_found">Found %1$d files (%2$s)</string>
+    <string name="status_no_files">No files found in the selected folder.</string>
+    <string name="status_scan_failed">Scan failed: %1$s</string>
+    <string name="status_scan_cancelled">Scan cancelled.</string>
+    <string name="status_archive_done">Saved: %1$s\nLocation: %2$s\nSize: %3$s\nFiles archived: %4$d of %5$d</string>
+    <string name="location_downloads">Downloads folder on this phone</string>
+    <string name="location_chosen">The location you chose</string>
+    <string name="status_archive_failures">⚠ %1$d file(s) could not be read</string>
+    <string name="status_archive_failed">Archive failed: %1$s</string>
+    <string name="status_archive_cancelled">Archive cancelled.</string>
+
+    <!-- Toasts -->
+    <string name="toast_archive_created">Archive created</string>
+    <string name="toast_no_folder">No folder selected</string>
+    <string name="toast_no_archive">No archive to share yet</string>
+    <string name="archive_unnamed">the archive</string>
+
+    <!-- Errors -->
+    <string name="error_all_failed">Could not read any of the files. The card may have been removed, or it may be unreadable on this device.</string>
+    <string name="error_no_picker">This device has no file picker available, so the card cannot be selected.</string>
+    <string name="error_no_share_app">No app on this device can share a ZIP file.</string>
+
+    <!-- Dialogs -->
+    <string name="dialog_failures_title">%1$d file(s) could not be read</string>
+    <string name="dialog_failures_body">The archive was still created, but these files are missing from it:\n\n%1$s</string>
+    <string name="dialog_failures_more">…and %1$d more</string>
+
+    <string name="dialog_no_room_title">Not enough space on this phone</string>
+    <string name="dialog_no_room_body">This backup is about %1$s, but the phone only has %2$s free.\n\nYou can save it somewhere else instead — Google Drive, the card itself, or a USB stick.</string>
+    <string name="button_choose_location">Choose another location…</string>
+
+    <string name="dialog_large_title">This archive is large</string>
+    <string name="dialog_large_body">The archive is %1$s. WhatsApp usually refuses attachments over about 100 MB, and email over about 25 MB.\n\nIt is already saved where you chose — sharing a link from there normally works better.</string>
+
+    <string name="share_chooser">Share archive via</string>
+    <string name="share_subject">SD/USB Backup</string>
+    <string name="share_body">Attached is the backup archive.</string>
 </resources>

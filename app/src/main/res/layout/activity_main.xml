@@ -1,59 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!--
+     Wrapped in a ScrollView so everything stays reachable on short screens once
+     the system-bar insets are added as padding (see applyWindowInsets).
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:padding="16dp"
-    android:gravity="center_horizontal">
+    android:fillViewport="true">
 
-    <TextView
-        android:id="@+id/titleText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SD Card Archive Tool"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_marginTop="32dp"
-        android:layout_marginBottom="32dp" />
-
-    <TextView
-        android:id="@+id/statusText"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Insert SD card and click Scan"
-        android:textSize="16sp"
-        android:gravity="center"
-        android:padding="16dp"
-        android:background="#E0E0E0"
-        android:layout_marginBottom="32dp"
-        android:minHeight="100dp" />
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
 
-    <Button
-        android:id="@+id/scanButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Scan SD Card"
-        android:textSize="18sp"
-        android:padding="16dp"
-        android:layout_marginBottom="16dp" />
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp" />
 
-    <Button
-        android:id="@+id/archiveButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Create Archive"
-        android:textSize="18sp"
-        android:padding="16dp"
-        android:layout_marginBottom="16dp"
-        android:enabled="false" />
+        <!-- Which card we're working on. Hidden until one is granted. -->
+        <TextView
+            android:id="@+id/folderText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone" />
 
-    <Button
-        android:id="@+id/shareButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Share Archive"
-        android:textSize="18sp"
-        android:padding="16dp"
-        android:enabled="false" />
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/status_initial"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:padding="16dp"
+            android:background="#E0E0E0"
+            android:textColor="#212121"
+            android:layout_marginBottom="16dp"
+            android:minHeight="96dp" />
 
-</LinearLayout>
+        <!--
+             Inline progress, shown only while something is running. Replaces the
+             deprecated ProgressDialog, which also couldn't survive a rotation.
+        -->
+        <LinearLayout
+            android:id="@+id/progressGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="true" />
+
+            <TextView
+                android:id="@+id/progressText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/cancelButton"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/button_cancel"
+                android:layout_marginTop="4dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/scanButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_select_card"
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/archiveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_archive"
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"
+            android:enabled="false" />
+
+        <Button
+            android:id="@+id/shareButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_share"
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp"
+            android:enabled="false" />
+
+        <!-- Secondary: only useful once a folder is already granted. -->
+        <Button
+            android:id="@+id/changeFolderButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_change_folder"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</ScrollView>

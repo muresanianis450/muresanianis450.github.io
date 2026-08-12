@@ -1,4 +1,4 @@
-package com.example.sdcardbackup;
+package ro.muresanianis.sdcardbackup;
 
 import org.junit.Test;
 
