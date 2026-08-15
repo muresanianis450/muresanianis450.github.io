@@ -1,8 +1,7 @@
----
-title: Privacy Policy — SD Card Backup
----
-
 # Privacy Policy — SD Card Backup
+
+> The published version of this policy is [`privacy.html`](privacy.html), served at
+> <https://muresanianis450.github.io/SD_CARD/privacy.html>. **If you change one, change both.**
 
 **Last updated:** 5 August 2026
 
@@ -43,18 +42,26 @@ not involved and receives nothing back.
 
 ## Where the archive is stored
 
-The archive is written to the app's own private storage area, which other apps cannot read.
+The archive is written directly to the destination you choose. Nothing is staged or copied
+anywhere first.
 
-It is deleted automatically:
+- **By default** it goes to your device's **Downloads** folder, where you can find it with any
+  file manager.
+- **If the backup is too large for your device**, or on Android 9 and older, the app asks you to
+  choose a destination instead — the card itself, a second drive, Google Drive, or anywhere else
+  your device offers.
 
-- when you create a new archive, and
-- the next time you open the app.
+The archive is an ordinary file that belongs to you. The app does not hide it, track it, or
+delete it — move or delete it whenever you like. If an archive fails part-way through or you
+cancel it, the incomplete file is removed automatically.
 
-Only one archive is kept at a time. If you save a copy somewhere else, that copy is yours to
-manage — the app does not track it or delete it.
+The app itself is excluded from Android's automatic cloud backup, so nothing belonging to the app
+is uploaded to your Google account. Be aware, though, that a file in your Downloads folder is a
+normal file on your device: if you have separate backup or sync software installed, that software
+may treat the archive like any other file. That is outside this app's control.
 
-The app is excluded from Android's automatic cloud backup, so archives are never uploaded to your
-Google account.
+Earlier versions of the app kept a copy in its own private storage. This version deletes any such
+leftover copies the first time you open it.
 
 ## Children
 
