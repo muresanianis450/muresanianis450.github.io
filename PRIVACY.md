@@ -1,16 +1,10 @@
+---
+title: Privacy Policy — SD Card Backup
+---
+
 # Privacy Policy — SD Card Backup
 
 **Last updated:** 5 August 2026
-
-> **DRAFT — read before publishing.** This was written to match what the code actually does as of
-> this date. Two things you must do before hosting it:
->
-> 1. Fill in the contact email at the bottom. Play requires a working contact address.
-> 2. Re-read it if the app ever changes. If it gains an `INTERNET` permission, analytics, crash
->    reporting, or ads, **most of this document becomes false** and must be rewritten.
->
-> This is a plain-language draft, not legal advice. If this app is being delivered to a client
-> commercially, have them confirm it meets their obligations.
 
 ---
 
