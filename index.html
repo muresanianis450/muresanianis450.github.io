@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SD Card Backup</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #5c5c5c;
+    --rule: #e2e2e2;
+    --accent: #1f6feb;
+    --card: #f6f8fa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0d1117;
+      --fg: #e6edf3;
+      --muted: #9198a1;
+      --rule: #30363d;
+      --accent: #58a6ff;
+      --card: #161b22;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 3rem 1.25rem 4rem;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 40rem; margin: 0 auto; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .5rem; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 .75rem; }
+  .tagline { color: var(--muted); font-size: 1.05rem; margin: 0 0 2.5rem; }
+  ul { padding-left: 1.25rem; }
+  li { margin: .4rem 0; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin: 1.5rem 0;
+  }
+  a { color: var(--accent); }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: .9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>SD Card Backup</h1>
+  <p class="tagline">Copy everything from a memory card or USB drive into a single ZIP file, straight from your Android phone.</p>
+
+  <h2>What it does</h2>
+  <p>Connect a card or drive, tap once, and the app reads every file and folder on it and writes them into one ZIP archive in your Downloads folder. You can then keep it, move it, or send it wherever you like.</p>
+
+  <h2>Privacy</h2>
+  <p>The app requests <strong>no permissions at all</strong> and has <strong>no internet access</strong>. It cannot upload, transmit, or report anything &mdash; not analytics, not crash reports, nothing. Everything happens on your device.</p>
+
+  <div class="card">
+    <strong><a href="privacy.html">Read the full privacy policy</a></strong>
+  </div>
+
+  <h2>Notes</h2>
+  <ul>
+    <li>Android asks you to select the card once. After that the app finds it automatically.</li>
+    <li>The folder structure of the card is preserved inside the archive.</li>
+    <li>If a backup is too large for your phone, the app offers to write it elsewhere &mdash; the card itself, another drive, or cloud storage.</li>
+    <li>Archives are not encrypted. Anyone who receives the file can open it.</li>
+  </ul>
+
+  <footer>
+    Questions: <a href="mailto:muresanianis450@gmail.com">muresanianis450@gmail.com</a>
+  </footer>
+
+</main>
+</body>
+</html>

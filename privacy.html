@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — SD Card Backup</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #5c5c5c;
+    --rule: #e2e2e2;
+    --accent: #1f6feb;
+    --card: #f6f8fa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0d1117;
+      --fg: #e6edf3;
+      --muted: #9198a1;
+      --rule: #30363d;
+      --accent: #58a6ff;
+      --card: #161b22;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 3rem 1.25rem 4rem;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 40rem; margin: 0 auto; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .5rem; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 .75rem; }
+  .updated { color: var(--muted); font-size: .9rem; margin: 0 0 2rem; }
+  ul { padding-left: 1.25rem; }
+  li { margin: .4rem 0; }
+  code {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: .1em .35em;
+    font-size: .9em;
+  }
+  .summary {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin: 0 0 2rem;
+  }
+  a { color: var(--accent); }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: .9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>Privacy Policy &mdash; SD Card Backup</h1>
+  <p class="updated">Last updated: 15 August 2026</p>
+
+  <div class="summary">
+    <strong>The short version:</strong> SD Card Backup does not collect, transmit, or store any
+    personal data. Everything it does happens on your device. The app has no internet access.
+  </div>
+
+  <h2>What the app does</h2>
+  <p>SD Card Backup reads the files on a memory card or USB drive you connect to your device,
+  combines them into a single ZIP archive, and lets you save that archive or send it somewhere
+  yourself.</p>
+
+  <h2>What data the app accesses</h2>
+  <p>The app reads the files in the folder <strong>you explicitly select</strong>. It cannot see
+  anything else.</p>
+  <p>Android's Storage Access Framework requires you to pick that folder yourself, through a system
+  screen the app does not control. The app has no permission to browse your device's storage on its
+  own &mdash; it requests <strong>no permissions at all</strong>.</p>
+  <p>The files are read only to copy them into the archive.</p>
+
+  <h2>What data leaves your device</h2>
+  <p><strong>None, unless you send it yourself.</strong></p>
+  <p>The app has no <code>INTERNET</code> permission. It is technically incapable of uploading,
+  transmitting, or reporting anything &mdash; including analytics, crash reports, diagnostics, or
+  usage statistics. There are no third-party SDKs, no advertising, and no tracking of any kind.</p>
+  <p>When you tap <strong>Share</strong>, Android's standard share menu opens and you choose an app
+  &mdash; email, WhatsApp, Drive, or anything else. At that moment the archive is handed to the app
+  you picked, and what happens next is governed by <strong>that</strong> app's privacy policy, not
+  this one. SD Card Backup is not involved and receives nothing back.</p>
+
+  <h2>Where the archive is stored</h2>
+  <p>The archive is written directly to the destination you choose. Nothing is staged or copied
+  anywhere first.</p>
+  <ul>
+    <li><strong>By default</strong> it goes to your device's <strong>Downloads</strong> folder,
+    where you can find it with any file manager.</li>
+    <li><strong>If the backup is too large for your device</strong>, or on Android 9 and older, the
+    app asks you to choose a destination instead &mdash; the card itself, a second drive, Google
+    Drive, or anywhere else your device offers.</li>
+  </ul>
+  <p>The archive is an ordinary file that belongs to you. The app does not hide it, track it, or
+  delete it &mdash; move or delete it whenever you like. If an archive fails part-way through or
+  you cancel it, the incomplete file is removed automatically.</p>
+  <p>The app itself is excluded from Android's automatic cloud backup, so nothing belonging to the
+  app is uploaded to your Google account. Be aware, though, that a file in your Downloads folder is
+  a normal file on your device: if you have separate backup or sync software installed, that
+  software may treat the archive like any other file. That is outside this app's control.</p>
+  <p>Earlier versions of the app kept a copy in its own private storage. This version deletes any
+  such leftover copies the first time you open it.</p>
+
+  <h2>Children</h2>
+  <p>The app collects no data from anyone, including children.</p>
+
+  <h2>Your rights</h2>
+  <p>Because no personal data is collected, transmitted, or stored by us, there is nothing for us to
+  access, correct, export, or delete on your behalf. Any data involved stays on your device and
+  under your control, and uninstalling the app removes any archive it created.</p>
+  <p>For users in the EU/EEA: the app performs no processing of personal data by us as a controller,
+  so the GDPR rights of access, rectification, erasure, and portability have nothing to act on at
+  our end. Files on your own device remain entirely yours.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If the app's behaviour changes in a way that affects privacy, this policy will be updated and
+  the date at the top changed.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy:
+  <a href="mailto:muresanianis450@gmail.com">muresanianis450@gmail.com</a></p>
+
+  <footer>
+    <a href="index.html">&larr; SD Card Backup</a>
+  </footer>
+
+</main>
+</body>
+</html>
