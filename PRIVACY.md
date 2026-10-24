@@ -1,7 +1,8 @@
 # Privacy Policy — SD Card Backup
 
 > The published version of this policy is [`privacy.html`](privacy.html), served at
-> <https://muresanianis450.github.io/SD_CARD/privacy.html>. **If you change one, change both.**
+> <https://muresanianis450.github.io/privacy.html> — this is the URL given to Google Play.
+> **If you change one, change both.**
 
 **Last updated:** 5 August 2026
 
